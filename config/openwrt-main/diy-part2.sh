@@ -40,3 +40,15 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
 #
 # ------------------------------- Other ends -------------------------------
+
+#####Add a feed source
+
+cat >> feeds.conf.default <<EOF
+src-git kenzo https://github.com/kenzok8/openwrt-packages
+src-git helloworld https://github.com/fw876/helloworld
+src-git passwall https://github.com/xiaorouji/openwrt-passwall
+src-git small http://github.com/kenzok8/small
+EOF
+
+
+
