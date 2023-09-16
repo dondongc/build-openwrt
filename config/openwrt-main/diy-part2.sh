@@ -40,7 +40,7 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
 #
 # ------------------------------- Other ends -------------------------------
-git checkout v23.03,5
+git checkout v23.03.5
 #####Add a feed source
 
 cat >> feeds.conf.default <<EOF
